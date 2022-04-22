@@ -24,6 +24,31 @@
         <div><img src="images/logo.svg" alt=""></div>
         <div><img class="ham" src="images/icon-hamburger.svg"></div>
     </div>
+    <div id="myLinks">
+        <li class="navitem">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+            <li class="navitem">
+               <a href="#" class="nav-link">About</a></li>
+            <li class="navitem">
+                <a href="#" class="nav-link">Contact</a></li>
+            <li class="navitem">
+                <a href="#" class="nav-link">Blog</a></li>
+            <li class="navitem">
+                <a href="#" class="nav-link">Careers</a></li>
+      </div>
+    <script>
+            let ham = document.querySelector(".ham");
+            ham.addEventListener('click', () =>{
+                let x = document.getElementById('myLinks');
+            if(x.style.display === "block"){
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+            })
+    </script>
     <div class="wrapper">
     <div class="container">
         <img class="imagediv" src="images/bg-intro-mobile.svg" alt="">
